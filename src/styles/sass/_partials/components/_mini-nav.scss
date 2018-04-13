@@ -1,0 +1,22 @@
+.miniNav-container {
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  width: 65%;
+  margin: 0 auto;
+
+  @include mobile {
+    width: 100%;
+  }
+
+  a, Link {
+    color: $white;
+    text-decoration: none;
+    // padding-right: 5px;
+    display: inline-block;
+    //width: 30%;
+    margin: 10px;
+  }
+}

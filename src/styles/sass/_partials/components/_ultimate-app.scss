@@ -1,0 +1,18 @@
+.sub-contact {
+  display: flex;
+  justify-content: center;
+  >div {
+    text-align: center;
+    padding: 15px;
+  }
+  a {
+    color: $white;
+    font-size: 28px;
+    display: inline-block;
+    padding: 20px;
+  }
+
+  &:hover {
+    color: $green;
+  }
+}

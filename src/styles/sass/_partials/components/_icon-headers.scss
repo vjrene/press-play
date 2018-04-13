@@ -1,0 +1,130 @@
+.subPageHeader-container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 700px;
+  align-items: flex-end;
+
+  @include mobile {
+    align-items: center;
+  }
+
+  > div {
+    // width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include mobile {
+    justify-content: center;
+  }
+}
+
+.subPage-content {
+  width: 90%;
+
+  @include mobile {
+    width: 100%;
+    margin-left: 10px;
+  }
+}
+
+.subPageHeader-text {
+  h5, h1 {
+    color: $white;
+  }
+
+  h5 {
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+
+  h1 {
+    font-weight: 500;
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+
+  p {
+    color: $grey;
+    line-height: 1.25;
+    @include tablet {
+      font-size: 16px;
+    }
+  }
+}
+
+.HomePageIcon-container {
+  @include mobile {
+    display: flex;
+  }
+}
+
+
+
+.vanessography-container {
+  .first {
+    .icon {
+      background-image: url('../../Images/projects/erongo/erongo.svg');
+      background-size: cover;
+    }
+  }
+  .second {
+    .icon {
+      background-image: url('../../Images/projects/idday/idday.svg');
+      background-size: cover;
+    }
+  }
+
+  .third {
+    .icon {
+      background-image: url('../../Images/albums/top-hits-mini.svg');
+      background-size: cover;
+    }
+  }
+}
+
+.idday-container {
+  .first {
+    .icon {
+      background-image: url('../../Images/projects/portfolio/vanessography-icon.svg');
+      background-size: cover;
+    }
+  }
+  .second {
+    .icon {
+      background-image: url('../../Images/projects/erongo/erongo.svg');
+      background-size: cover;
+    }
+  }
+
+  .third {
+    .icon {
+      background-image: url('../../Images/albums/top-hits-mini.svg');
+      background-size: cover;
+    }
+  }
+}
+
+.erongo-container {
+  .first {
+    .icon {
+      background-image: url('../../Images/projects/idday/idday.svg');
+      background-size: cover;
+    }
+  }
+  .second {
+    .icon {
+      background-image: url('../../Images/projects/portfolio/vanessography-icon.svg');
+      background-size: cover;
+    }
+  }
+
+  .third {
+    .icon {
+      background-image: url('../../Images/albums/top-hits-mini.svg');
+      background-size: cover;
+    }
+  }
+}

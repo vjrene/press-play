@@ -1,0 +1,47 @@
+.good-container {
+  img {
+    max-width: 375px;
+    max-height: 100%;
+    padding: 10px;
+
+    @include mobile {
+      max-width: 300px;
+    }
+  }
+}
+
+#v-sketches {
+  img {
+    max-height: 200px;
+    max-width: 250px;
+  }
+}
+
+.progress-pics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-pics-alt {
+  display: flex;
+  // flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  @include mobile {
+    flex-direction: column;
+    flex-flow: column-reverse;
+  }
+  img {
+    max-height: 300px;
+    max-width: auto;
+    margin: 3px;
+
+    @include mobile {
+      max-width: 310px;
+      max-height: auto;
+    }
+  }
+}

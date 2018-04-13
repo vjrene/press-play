@@ -1,0 +1,119 @@
+.relatedPages-container {
+
+  @include mobile {
+    text-align: center;
+  }
+  h5, a, Link {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+.hold-minis {
+  .icon {
+    background-size: cover;
+    transition: transform .5s ease;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  @include mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.relatedPageMini {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+
+
+  .icon {
+    border-radius: 50%;
+    background-color: navy;
+    min-height: 50px;
+    min-width: 50px;
+    margin-right: 10px;
+  }
+  .title {
+    color: white;
+    h5 {
+      font-size: 14px;
+      font-weight: 500;
+      color: $white;
+    }
+  }
+}
+
+.ultimate-container {
+  .first .icon {
+    background-image: url('../../Images/albums/top-hits-mini.svg');
+
+  }
+  .second .icon {
+    background-image: url('../../Images/albums/discover-mini.svg');
+  }
+
+  .third .icon {
+    background-image: url('../../Images/albums/this-is-mini.jpg');
+  }
+}
+
+.top-container {
+  .first .icon {
+    background-image: url('../../Images/albums/good-vibes-mini.svg');
+
+  }
+  .second .icon {
+    background-image: url('../../Images/albums/discover-mini.svg');
+  }
+
+  .third .icon {
+    background-image: url('../../Images/albums/this-is-mini.jpg');
+  }
+}
+
+.good-container {
+  .first .icon {
+    background-image: url('../../Images/albums/ultimate-mini.svg');
+
+  }
+  .second .icon {
+    background-image: url('../../Images/albums/top-hits-mini.svg');
+  }
+
+  .third .icon {
+    background-image: url('../../Images/albums/discover-mini.svg');
+  }
+}
+
+.discover-container {
+  .first .icon {
+    background-image: url('../../Images/albums/ultimate-mini.svg');
+
+  }
+  .second .icon {
+    background-image: url('../../Images/albums/top-hits-mini.svg');
+  }
+
+  .third .icon {
+    background-image: url('../../Images/albums/this-is-mini.jpg');
+  }
+}
+
+.thisis-container {
+  .first .icon {
+    background-image: url('../../Images/albums/ultimate-mini.svg');
+
+  }
+  .second .icon {
+    background-image: url('../../Images/albums/top-hits-mini.svg');
+  }
+
+  .third .icon {
+    background-image: url('../../Images/albums/discover-mini.svg');
+  }
+}

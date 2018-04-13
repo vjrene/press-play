@@ -1,0 +1,63 @@
+.bottom-nav-container {
+  background: $black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.bottom-nav-router,
+.bottom-nav-page {
+ min-height: 45px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background: $dark-grey;
+}
+
+.bottom-nav-router {
+  display: none;
+
+  @include mobile { display: flex; }
+
+ a, Link {
+   color: $grey;
+   display: inline-block;
+   padding: 10px;
+   font-size: 30px;
+   transition: color 0.5s ease;
+   text-decoration: none;
+
+   @include mobile {
+     font-size: 25px;
+   }
+
+   &:hover {
+     color: $white;
+   }
+ }
+}
+
+.bottom-nav-page {
+ margin-bottom: 0;
+ font-size: 14px;
+
+ @include mobile { 
+  margin-bottom: 5px;
+  font-size: 12px;
+ }
+}
+
+.v-logo-bottom {
+  svg {
+    height: 35px;
+    width: 35px;
+    transition: fill .5s ease;
+
+    &:hover {
+      path {
+        fill: white;
+      }
+    }
+
+  }
+}

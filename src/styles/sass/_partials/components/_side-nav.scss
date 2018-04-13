@@ -1,0 +1,54 @@
+.desktop-nav {
+  background: $dark-black;
+  color: $white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  width: 25%;
+
+  @include tablet {
+    width: 15%;
+  }
+
+  span {
+    font-size: 18px;
+  }
+  
+  @include mobile { display: none; }
+
+  @include tablet {
+    .fa {
+      font-size: 30px;
+    }
+    span {
+      display: none;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    a, Link {
+      color: white;
+      text-decoration: none;
+    }
+
+    li {
+      font-size: 20px;
+      padding: 15px;
+    }
+  }
+}
+
+.desktop-nav .v-logo {
+  width: 30px;
+
+  @include tablet {
+    width: 45px;
+  }
+}
+
+.v-logo {
+  width: 50px;
+}

@@ -1,0 +1,102 @@
+.page-container {
+  padding: 20px 20px 20px 20px;
+
+  @include mobile {
+    padding: 20px 0 0 0;
+  }
+}
+
+.thisis-container {
+  .app-content--text {
+    // padding-right: 20px;
+    // padding-left: 20px;
+
+    @include mobile {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  .homePageHeader-container {
+    .button-link { display: none; }
+    justify-content: center;
+  }
+}
+
+.app-container {
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto;
+
+  @include mobile {
+    flex-direction: column;
+    max-width: none;
+    // padding-bottom: 50px;
+  }
+}
+
+.app-content {
+  width: 100%;
+
+  @include mobile {
+    padding-bottom: 150px !important;
+  }
+
+  // bg gradient
+  background: rgba(64,64,64,1);
+  background: -moz-linear-gradient(top, rgba(64,64,64,1) 0%, rgba(24,24,24,1) 47%, rgba(24,24,24,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(64,64,64,1)), color-stop(47%, rgba(24,24,24,1)), color-stop(100%, rgba(24,24,24,1)));
+  background: -webkit-linear-gradient(top, rgba(64,64,64,1) 0%, rgba(24,24,24,1) 47%, rgba(24,24,24,1) 100%);
+  background: -o-linear-gradient(top, rgba(64,64,64,1) 0%, rgba(24,24,24,1) 47%, rgba(24,24,24,1) 100%);
+  background: -ms-linear-gradient(top, rgba(64,64,64,1) 0%, rgba(24,24,24,1) 47%, rgba(24,24,24,1) 100%);
+  background: linear-gradient(to bottom, rgba(64,64,64,1) 0%, rgba(24,24,24,1) 47%, rgba(24,24,24,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#404040', endColorstr='#181818', GradientType=0 );
+
+  // overflow: scroll;
+
+  @include mobile {
+    background: $black;
+    padding: 0;
+    padding-top: 45px;
+  }
+}
+
+.app-content--text {
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  .text {
+    h5 {
+      color: $green;
+    }
+  }
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  > div {
+    padding: 10px;
+
+    @include mobile {
+      padding: 0;
+    }
+
+    &:first-of-type {
+      width: 70%;
+      color: $white;
+      @include mobile {
+        width: 100%;
+      }
+      
+    }
+
+    &:nth-of-type(2) {
+      width: 30%;
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.topnav-container {
+  display: none;
+
+  background: $dark-grey;
+  color: $white;
+  // text-align: center;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  position: fixed;
+  z-index: 101;
+  width: 100%;
+
+  @include mobile {
+    display: flex;
+  }
+
+}

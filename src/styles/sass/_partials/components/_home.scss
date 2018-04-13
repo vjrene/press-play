@@ -1,0 +1,15 @@
+.home-container {
+  .home-made {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  h1, h2 {
+    text-align: center;
+  }
+  h1 {
+    color: $white;
+  }
+  h2 {
+    color: $grey;
+  }
+}

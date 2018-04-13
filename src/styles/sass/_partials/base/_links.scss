@@ -1,0 +1,9 @@
+a, Link {
+  color: $green;
+  text-decoration: none;
+  transition: color .5s ease;
+  &:hover {
+    color: $white;
+    text-decoration: underline;
+  }
+}
